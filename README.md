@@ -1,31 +1,35 @@
-## Some usefull command to use in Arch Linux
+## Some usefull command to use in ArchLinux
+## Alguns comandos úteis para se usar no ArchLinux
 
-Update the whole system
+Update the whole system (Atualização de todo o sistema)
 
     sudo pacman -Syuu
 
 Remove cached packages that are not currently installed
+(Remova pacotes (chache) que não estão instalados)
 
     sudo pacman -Sc
 
-Remove all package from cache
+Remove all package from cache (Remover todos os pacotes do cache)
 
     sudo pacman -Scc
 
-Remove unused packages
+List unused packages (listar os pacotes não utilizados)
 
     sudo pacman -Qtdq
+ 
+Remove unused packages (Remover pacotes não utilizados)
 
-    sudo pacman -Rns $(pacman -Qtdq)
+    sudo pacman -R $(pacman -Qtdq)
 
-Clean cache in $HOME directory
+Clean cache in $HOME directory (Remover cache que está no diretório %HOME)
 
     rm -rf ~/.cache/*
 
-List packages installed from AUR
+List packages installed from AUR (Lista dos pacotes que estão no AUR)
 
     pacman -Qm
 
-Search packages
+Search packages (Procurar por pacotes)
 
     pacman -Ss
