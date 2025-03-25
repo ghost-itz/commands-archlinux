@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#Update n' clean system
+#Atualização e Limpeza do sistema
+
+sudo pacman -Syu -y && sudo pacman -Scc -y && sudo pacman -R $(pacman -Qtdq) -y
+&& rm -rf ~/.cache/*
+
+
+
