@@ -20,7 +20,7 @@ List unused packages (listar os pacotes não utilizados)
  
 Remove unused packages (Remover pacotes não utilizados)
 
-    sudo pacman -R $(pacman -Qtdq)
+    sudo pacman -Rns $(pacman -Qtdq)
 
 Clean cache in $HOME directory (Remover cache que está no diretório %HOME)
 
