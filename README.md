@@ -3,7 +3,7 @@
 
 Update the whole system (Atualização de todo o sistema)
 
-    sudo pacman -Syuu
+    sudo pacman -Syu
 
 Remove cached packages that are not currently installed
 (Remova pacotes (chache) que não estão instalados)
